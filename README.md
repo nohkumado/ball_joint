@@ -2,8 +2,10 @@
 an openscad library to generated ball joints, remix from  Gael Lafond's solution
 he had a separate lib for the helix part, since i only use his lib with the ball joint i merged them.
 
+***
+
 ## Inherited README's
-### Helix library for OpenSCAD by gaellafond on (Thingiverse)[https://www.thingiverse.com/thing:2200395]
+### Helix library for OpenSCAD by gaellafond on [Thingiverse](https://www.thingiverse.com/thing:2200395)
 
 #### Summary
 
@@ -18,11 +20,11 @@ Issues
 
 Using hull() to join polygons has some downsides:
 
-    Polygons needs to be extruded into 3D shape for hull to work properly.
+>   Polygons needs to be extruded into 3D shape for hull to work properly.
 
-    Concave polygons are made convex.
+>   Concave polygons are made convex.
 
-    Hull is overkill for what I'm doing, it takes too long to render.
+>   Hull is overkill for what I'm doing, it takes too long to render.
 
 The only way I can see to fix this without changing the API is to iterate through points of the polygon, and create the polyhedron manually. Unfortunately, this is not possible with the current version of OpenSCAD.
 
@@ -39,10 +41,15 @@ helix_extrude()
         circle(r=3);
 ```
 
+##### Some images
+
+![preview](images/preview.png)
+![helix](images/1b61541ca7d8fa809aed0ca6f8fdbb9e.png)
 
 
 
-## Universal Ball Jointv by gaellafond on (Thingiverse)[https://www.thingiverse.com/thing:5136665]
+
+### Universal Ball Joint by gaellafond on (Thingiverse)[https://www.thingiverse.com/thing:5136665]
 
 This is intended to be used as a library in other projects.
 
@@ -80,6 +87,13 @@ Example:
 
 Inspired from:
 
-    (Universal Ball Joint by MORONator)[https://www.thingiverse.com/thing:5020323]
+    [Universal Ball Joint by MORONator](https://www.thingiverse.com/thing:5020323)
 
 Unit: millimetres.
+
+##### Some images
+
+![printed example](images/2021-11-14.jpg)
+![ballpoint](images/balljoint_demo_ball.png)
+![seat](images/balljoint_demo_seat.png)
+![nut](images/balljoint_demo_nut.png)
