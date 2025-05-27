@@ -2,6 +2,26 @@
 an openscad library to generated ball joints, remix from  Gael Lafond's solution
 he had a separate lib for the helix part, since i only use his lib with the ball joint i merged them.
 
+## added open ball joint:
+![open ball joint](images/open_balljoint.png)
+```
+    use <open_balljoint.scad>;
+    else ball_joint_ball(
+        ball_radius,
+        neck_radius,
+        neck_height
+    );
+    ball_joint_socket(
+        ball_radius,
+        socket_wall_thickness,
+        socket_opening_angle,
+        neck_radius,
+        neck_height,
+        side_slot_ratio, 
+        clearance,
+        width
+    );
+```
 ***
 
 ## Inherited README's
